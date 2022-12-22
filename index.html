@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet"> 
+<script src="https://kit.fontawesome.com/2975f57649.js" crossorigin="anonymous"></script>
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hello">
+            <h2>Benvenuto buddy!</h2>
+            <h5>Diamo un'occhiata alle tue task</h5>
+        </div>
+        <div class="input-container">
+            <input placeholder="Aggiungi task" type="text" name="todo" id="todo" onkeydown = "if (event.keyCode == 13)
+            document.getElementById('input-button').click()">
+            <button id="input-button" type="button">Aggiungi task</button>
+        </div>
+        <div class="task-container">
+            <ul id="task-list">
+                <!-- <li class="list-item"> "task" <i style="cursor: pointer;" class="fa-solid fa-x"></i></li> -->
+            </ul>
+        </div>
+
+
+        <!-- Alert personalizzato -->
+        <div id="custom-alert" style="display: flex; justify-content: center; align-items: center; display: none;">
+            <section class="custom-alert">
+                <div class="banner"></div>
+                <h3>Per favore, inserisci una task</h3>
+                <button id="alert-btn" type="submit">OK</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', cursive;
+}
+
+.hello{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: #f9ea85;
+    height: 250px;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+
+    h2{
+        margin-top: 2rem;
+    }
+}
+
+.input-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    #todo{
+        padding: 1rem;
+        height: 35px;
+        width: 400px;
+        border-radius: 10px;
+        border: 1px solid #161616;
+    }
+
+    button{
+        padding: 1.2rem;
+        cursor: pointer;
+        background-color: #f9ea85;
+        border: none;
+        border-radius: 10px;
+        transition: .3s ease-in;
+
+        &:hover{
+            background-color: #f5dc72;
+        }
+    }
+}
+
+
+.task-container{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #task-list{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .list-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 400px;
+        list-style-type: none;
+        border: 2px solid #161616;
+        padding: 2rem 5rem 2rem 5rem;
+        border-radius: 20px;
+
+        .fa-x{
+            cursor: pointer;
+            transition: .3s ease;
+            &:hover{
+                color:#f5dc72;
+            }
+        }
+    }
+}
+
+
+.custom-alert{
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f3f3f3;
+    height: 160px;
+    width: 500px;
+    padding-bottom: 20px;
+    // position: absolute;
+    // top: 45%;
+    // left: 37%;
+    .banner{
+        background-color: #f9ea85;
+        height: 50px;
+        width: 100%;
+    }
+
+    button{
+        padding: 1.2rem 4rem 1.2rem 4rem ;
+        cursor: pointer;
+        background-color: #f9ea85;
+        border: none;
+        border-radius: 10px;
+        transition: .3s ease-in;
+
+        &:hover{
+            background-color: #f5dc72;
+        }
+    }
+}
