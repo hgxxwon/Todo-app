@@ -38,5 +38,5 @@ btn.addEventListener('click',  (e)=>{
     x.addEventListener('click', (e)=> {
         e.preventDefault();
         list.removeChild(li);
-    })
-})
+    });
+});
